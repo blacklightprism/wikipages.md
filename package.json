@@ -1,0 +1,17 @@
+{
+  "name": "wikipages.md",
+  "version": "1.0.0",
+  "description": "wikipages.md is a simple app that helps you keeping track of important information.",
+  "main": "runwiki.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc Schedel",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.0.0",
+    "memorystore": "^1.6.2"
+  }
+}

@@ -1,0 +1,1 @@
+import{h as r,Component as o,render as t}from"./preact-10.5.12.module.min.js";export{h,render,Component}from"./preact-10.5.12.module.min.js";import e from"./htm-3.0.4.module.js";var m=e.bind(r);export{m as html};

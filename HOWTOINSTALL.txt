@@ -1,0 +1,6 @@
+1) install nodejs (^12.18.x, rmdir with recursive option needed!) and add to path
+2) run npm install in this folder
+3) change express-session secret in wikiserver.js
+4) enter the SHA-256 hash of the wanted admin password in .pwhashlocked and rename to .pwhash
+    (you can skip this step if you do not want admin features to be enabled)
+5) run with node wikiserver.js

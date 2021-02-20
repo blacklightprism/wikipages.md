@@ -1,0 +1,6 @@
+- Change Password Button
+- Autosave Editor Content before session expires
+- Button to copy Editor Content to clipboard
+- Button to create share link on public files
+
+- Share Encrypted files with other users

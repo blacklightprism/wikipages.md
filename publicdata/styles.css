@@ -1,0 +1,321 @@
+@import url('/app/fonts/roboto/roboto.css');
+@import url('/app/fonts/ubuntumono/ubuntumono.css');
+
+:root {
+  --text-color: #000;
+  --bg-color: #fff;
+  --link-color: #129;
+  --block-text-color: var(--text-color);
+  --block-bg-color: #ddd;
+  --button-text-color: var(--text-color);
+  --button-bg-color: #ddd;
+  --button-hover-bg-color: #ccc;
+  --button-ok-bg-color: #aea;
+  --button-ok-hover-bg-color: #8e8;
+  --button-waiting-bg-color: #fc4;
+  --button-waiting-hover-bg-color: #fa3;
+  --button-error-bg-color: #faa;
+  --button-error-hover-bg-color: #f88;
+  --input-focus-color: #888;
+  --input-valid-color: #8e8;
+  --input-invalid-color: #e88;
+  --th-bg-color: #ccc;
+  --table-even-bg-color: #eee;
+  --hr-color: #aaa;
+}
+
+[data-theme="dark"] {
+  --text-color: #ccc;
+  --bg-color: #222;
+  --link-color: #19c;
+  --block-text-color: var(--text-color);
+  --block-bg-color: #444;
+  --button-text-color: var(--text-color);
+  --button-bg-color: #444;
+  --button-hover-bg-color: #666;
+  --button-ok-bg-color: #1a0;
+  --button-ok-hover-bg-color: #190;
+  --button-waiting-bg-color: #d80;
+  --button-waiting-hover-bg-color: #c70;
+  --button-error-bg-color: #922;
+  --button-error-hover-bg-color: #822;
+  --input-focus-color: #888;
+  --input-valid-color: #1a0;
+  --input-invalid-color: #922;
+  --th-bg-color: #555;
+  --table-even-bg-color: #333;
+  --hr-color: #aaa;
+}
+
+#logo {
+  height:120px; float: right;
+}
+@media only screen and (max-width: 450px) {
+  #title {
+    display: block;
+  }
+  #logo {
+    height:80px; float: right;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+a {
+  display: inline-block;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: 0.2s;
+  margin: 0 0.1em;
+  white-space: nowrap;
+}
+a:hover {
+  transform: skewX(-10deg);
+}
+a::before {
+  content: "\203A";
+  font-size: 1.2em;
+}
+a::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 0.1em;
+  background: var(--link-color);
+  transition: width 0.1s ease 0.1s, left 0.1s ease 0.1s;
+  width: 0;
+  left: 0;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.awoarrow {
+  cursor: pointer;
+}
+.awoarrow::before {
+  content: "";
+}
+.awdirlink {
+  cursor: pointer;
+}
+.awdirlink::before {
+  content: "\1F4C2";
+}
+.awfilelink::before {
+  content: "\1F4C4";
+}
+
+#AdminArea {
+  max-width: 300px;
+  margin: auto;
+}
+
+#app {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 1em;
+}
+
+blockquote {
+  color: var(--block-text-color);
+  background-color: var(--block-bg-color);
+  border-radius: 4px;
+  border-left: 3px solid #aaa;
+  padding: 3px;
+}
+
+blockquote p {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
+
+button {
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  margin: 0.2em;
+  border: 1px solid #555;
+  border-radius: 3px;
+  font-size: inherit;
+  padding: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.25s;
+}
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+.buttonok {
+  background-color: var(--button-ok-bg-color);
+}
+.buttonok:hover {
+  background-color: var(--button-ok-hover-bg-color);
+}
+.buttonwaiting {
+  background-color: var(--button-waiting-bg-color);
+}
+.buttonwaiting:hover {
+  background-color: var(--button-waiting-hover-bg-color);
+}
+.buttonerror {
+  background-color: var(--button-error-bg-color);
+}
+.buttonerror:hover {
+  background-color: var(--button-error-hover-bg-color);
+}
+
+code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  display: inline-block;
+  padding: 3px;
+  background-color: var(--block-bg-color);
+  border-radius: 4px;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+}
+form button, form input, form label {
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+form button {
+  margin-top: 0.8em;
+}
+form input {
+  margin-top: 0.2em;
+}
+form label {
+  margin-top: 0.8em;
+}
+
+h1 {
+  display: block;
+  font-size: 1.7em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: normal;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: normal;
+}
+
+h3 {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: normal;
+}
+
+h4 {
+  display: block;
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: normal;
+}
+
+.header {
+  padding-top: 3px;
+  margin: 0 0 2em 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--hr-color);
+}
+
+input {
+  outline: none;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 0.2em;
+  font-size: inherit;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 0.09em solid #ccc;
+  transition: border-bottom 0.4s;
+}
+input:focus {
+  border-bottom: 0.09em solid var(--input-focus-color);
+}
+input:focus:required:valid {
+  border-bottom: 0.09em solid var(--input-valid-color);
+}
+input:focus:required:invalid {
+  border-bottom: 0.09em solid var(--input-invalid-color);
+}
+
+#LoginArea {
+  max-width: 300px;
+  margin: auto;
+}
+
+mini {
+  font-size: 0.75em;
+}
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+p {
+ max-width: 100%;
+}
+
+pre {
+  overflow: scroll;
+}
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+th {
+  border: 1px solid var(--text-color);
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+  background: var(--th-bg-color);
+}
+td {
+  border: 1px solid var(--text-color);
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+}
+tr:nth-child(even) {
+  background: var(--table-even-bg-color);
+}
+
+textarea {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  color: inherit;
+  background-color: inherit;
+  /*white-space: pre;*/
+}

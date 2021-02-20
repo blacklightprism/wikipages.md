@@ -1,0 +1,8 @@
+node_modules/
+userdata/*
+!userdata/.userbackup
+www/app/fonts/*
+!www/app/fonts/roboto
+!www/app/fonts/ubuntumono
+.pwhash
+package-lock.json

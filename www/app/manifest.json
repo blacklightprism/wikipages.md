@@ -1,0 +1,47 @@
+{
+  "name": "wikipages.md",
+  "short_name": "wikipages.md",
+  "description": "wikipages.md is a simple app that helps you keeping track of important information, either in plain text or markdown style",
+  "icons": [
+    {
+      "src": "/app/img/wikilight1-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/wikilight1-maskable.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#333",
+  "theme_color": "#FFF"
+}
